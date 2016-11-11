@@ -1,0 +1,44 @@
+/*
+Theme Name: Bj
+Theme URI: http://CodeSpire.co.il/
+Author: Guy Ytzhak
+Author URI: http://CodeSpire.co.il/
+Description: Wordpress Theme For Bj By CodeSpire!
+Version: 1.0.0
+Text Domain: bj
+*/
+
+/** Main **/
+
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+body, html {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: normal;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    background-color: #fff;
+}
+
+body {
+    padding-bottom: 28px;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
