@@ -17,7 +17,7 @@
 </div>
 
 <?php endwhile; else : ?>
-    <p><?php _e( 'Sorry, no pages matched your criteria.', 'mozi' ); ?></p>
+    <p><?php _e( 'Sorry, no pages matched your criteria.', 'cs' ); ?></p>
 <?php endif; ?>
 
 
