@@ -62,7 +62,7 @@ function cs_menus() {
 	register_nav_menus( $locations );
 
 }
-add_action( 'init', 'cs_menus' );*/
+add_action( 'init', 'cs_menus' );
 
 
 
