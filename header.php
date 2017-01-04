@@ -14,6 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
 	
+<!--[if lt IE 9]>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/html5shiv.js"></script>
+<![endif]-->
  
 </head>
 <body <?php body_class(); ?>>
