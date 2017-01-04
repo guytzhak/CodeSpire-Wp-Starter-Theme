@@ -20,7 +20,7 @@
  
 </head>
 <body <?php body_class(); ?>>
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cs' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#page_content"><?php esc_html_e( 'Skip to content', 'cs' ); ?></a>
 	<div id="menu" class="col-md-7 col-sm-6 col-xs-6" role="banner">
 	    <nav class="navbar navbar-default" role="navigation">
 	        <!-- Brand and toggle get grouped for better mobile display -->
