@@ -2,6 +2,9 @@
 
 Wordpress Start Theme By CodeSpire
 
+![codespire_starter_theme](https://raw.githubusercontent.com/guytzhak/CodeSpire-Wp-Starter-Theme/master/images/codespire_img.jpg)
+
+
 ## How to use
 
 Upload theme file to your Wordpress Themes directory and activate via admin panel.
