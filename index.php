@@ -5,7 +5,7 @@
 <?php the_post_thumbnail('full'); ?>
 
 
-<div id="page_content">
+<div id="page_content" role="main">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
