@@ -57,6 +57,7 @@ function cs_scripts() {
 add_action( 'wp_enqueue_scripts', 'cs_scripts' );
 
 include_once('wp_bootstrap_navwalker.php');
+include_once('inc/core_func.php');
 
 /** Sidebars **/
 
