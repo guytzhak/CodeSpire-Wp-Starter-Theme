@@ -23,6 +23,12 @@ Upload theme file to your Wordpress Themes directory and activate via admin pane
 
 ## ChangeLog
 
+### 1.0.2 - 21/01/2017
+- Add Core Functions file in "inc" folder and named 'core_func.php'
+- Add new function within 'core_func.php' file to remove unnecessary hooks for wordpress
+- Fix RTL (CSS File named RTL.CSS) Support for bootstrap divs that's broken in new rows.
+
+
 ### 1.0.1 - 05/01/2017
 - Add HTML5SHIV to adjust theme to old browsers (IE6-9)
 - Add att "role" to header, main content and footer for Accesibility.
