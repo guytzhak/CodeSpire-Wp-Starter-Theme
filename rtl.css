@@ -1,0 +1,49 @@
+/**
+Add Right-To-Left Support for CodeSpire Wp Starter Theme
+author: Guy Ytzhak
+**/
+
+@media all and (max-width: 767px){
+    .col-xs-1:nth-child(12n+1){clear:right;}
+    .col-xs-2:nth-child(6n+1){clear:right;}
+    .col-xs-3:nth-child(4n+1){clear:right;}
+    .col-xs-4:nth-child(3n+1){clear:right;}
+    .col-xs-6:nth-child(2n+1){clear:right;}
+}
+
+@media all and (min-width: 768px){
+    .col-sm-1:nth-child(12n+1){clear:right;}
+    .col-sm-2:nth-child(6n+1){clear:right;}
+    .col-sm-3:nth-child(4n+1){clear:right;}
+    .col-sm-4:nth-child(3n+1){clear:right;}
+    .col-sm-6:nth-child(2n+1){clear:right;}
+}
+
+@media all and (min-width: 992px){
+    .col-sm-1:nth-child(12n+1){clear:none;}
+    .col-sm-2:nth-child(6n+1){clear:none;}
+    .col-sm-3:nth-child(4n+1){clear:none;}
+    .col-sm-4:nth-child(3n+1){clear:none;}
+    .col-sm-6:nth-child(2n+1){clear:none;}
+    
+    .col-md-1:nth-child(12n+1){clear:right;}
+    .col-md-2:nth-child(6n+1){clear:right;}
+    .col-md-3:nth-child(4n+1){clear:right;}
+    .col-md-4:nth-child(3n+1){clear:right;}
+    .col-md-6:nth-child(2n+1){clear:right;}
+}
+
+@media all and (min-width: 1200px){
+    
+    .col-md-1:nth-child(12n+1){clear:none;}
+    .col-md-2:nth-child(6n+1){clear:none;}
+    .col-md-3:nth-child(4n+1){clear:none;}
+    .col-md-4:nth-child(3n+1){clear:none;}
+    .col-md-6:nth-child(2n+1){clear:none;}
+    
+    .col-lg-1:nth-child(12n+1){clear:right;}
+    .col-lg-2:nth-child(6n+1){clear:right;}
+    .col-lg-3:nth-child(4n+1){clear:right;}
+    .col-lg-4:nth-child(3n+1){clear:right;}
+    .col-lg-6:nth-child(2n+1){clear:right;}
+}
