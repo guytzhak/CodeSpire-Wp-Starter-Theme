@@ -4,16 +4,16 @@ Theme URI: http://CodeSpire.co.il/
 Author: Guy Ytzhak
 Author URI: http://CodeSpire.co.il/
 Description: Wordpress Theme For Bj By CodeSpire!
-Version: 1.0.1
+Version: 1.0.2
 Text Domain: cs
 */
 
 /** Main **/
 
-@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round&subset=hebrew);
 
 body, html {
-    font-family: 'Open Sans Hebrew', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-weight: normal;
     color: #000;
     font-size: 14px;
@@ -116,5 +116,4 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 }
