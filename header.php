@@ -31,7 +31,9 @@
 		    <span class="icon-bar icon-bar-two"></span>
 		    <span class="icon-bar"></span>
 	          </button>
-	          <!-- <a class="navbar-brand" href="#">Brand</a> -->
+	          <a class="navbar-brand" href="<?php echo site_url(); ?>">
+		          <?php cs_the_custom_logo(); ?>
+	          </a>
 	        </div>
 	          <?php
 		    wp_nav_menu( array(

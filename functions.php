@@ -101,4 +101,12 @@ function cs_the_custom_logo() {
 	return false;
 }
 
+add_filter( 'get_custom_logo', 'cs_change_logo_class' );
+
+function cs_change_logo_class( $html ) {
+
+	$html = str_replace( 'custom-logo', 'navbar-brand', $html );
+	return $html;
+}
+
 ?>
