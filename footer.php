@@ -1,9 +1,8 @@
+			<footer id="footer" class="site-footer" role="contentinfo">
 
-<footer id="footer" class="site-footer" role="contentinfo">
-  
-</footer>
+			</footer>
 
-<?php wp_footer(); ?>
-
-</body>
+			<?php wp_footer(); ?>
+		</div>
+	</body>
 </html>
