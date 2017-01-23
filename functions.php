@@ -88,5 +88,17 @@ function cs_menus() {
 add_action( 'init', 'cs_menus' );
 
 
+/**
+ * Wrap function to the_custom_logo for old wp versions, Print out the logo
+ * @return bool
+ */
+function cs_the_custom_logo() {
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+		return true;
+	}
+
+	return false;
+}
 
 ?>
