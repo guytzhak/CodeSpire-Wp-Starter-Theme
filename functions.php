@@ -101,6 +101,18 @@ function cs_the_custom_logo() {
 	return false;
 }
 
+/**
+ * Wrap function to has_custom_logo for old wp versions, Check if custom logo exist
+ * @return bool
+ */
+function cs_has_custom_logo() {
+	if ( function_exists( 'has_custom_logo' ) ) {
+		return has_custom_logo();
+	}
+
+	return false;
+}
+
 add_filter( 'get_custom_logo', 'cs_change_logo_class' );
 
 function cs_change_logo_class( $html ) {
