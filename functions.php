@@ -117,7 +117,7 @@ add_filter( 'get_custom_logo', 'cs_change_logo_class' );
 
 function cs_change_logo_class( $html ) {
 
-	$html = str_replace( 'custom-logo', 'navbar-brand', $html );
+	$html = str_replace( array( 'custom-logo-link' ), array( 'navbar-brand' ), $html );
 	return $html;
 }
 
