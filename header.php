@@ -25,49 +25,41 @@
 
 </head>
 <body <?php body_class(); ?>>
-<div class="container-fluid">
-	<a class="skip-link screen-reader-text" href="#page_content"><?php esc_html_e( 'Skip to content', 'cs' ); ?></a>
-	<div class="row">
-		<div id="menu" class="col-md-7 col-sm-6 col-xs-6" role="banner">
-			<nav class="navbar navbar-default" role="navigation">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-					        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar icon-bar-two"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<?php
-					if ( cs_has_custom_logo() ) {
-						cs_the_custom_logo();
+<a class="skip-link screen-reader-text" href="#page_content"><?php esc_html_e( 'Skip to content', 'te' ); ?></a>
+<header id="header" role="banner">
+	<div class="container">
+        <div class="logo">
+            <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_field( 'logo', 'options' ); ?>" alt="<?php bloginfo('url'); ?>"></a>
+        </div>
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar icon-bar-two"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <?php
+                wp_nav_menu( array(
+                        'menu'            => 'header_menu',
+                        'theme_location'  => 'header_menu',
+                        'depth'           => 2,
+                        'container'       => 'div',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id'    => 'bs-example-navbar-collapse-1',
+                        'menu_class'      => 'nav navbar-nav',
+                        'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+                        'walker'          => new wp_bootstrap_navwalker()
+                    )
+                );
+                ?>
 
-					} else {
-						?>
-						<a class="navbar-brand" href="<?php echo site_url(); ?>">
-							<?php echo get_bloginfo( 'name' ); ?>
-						</a>
-						<?php
-					}
-					?>
-				</div>
-				<?php
-				wp_nav_menu( array(
-						'menu'            => 'header_menu',
-						'theme_location'  => 'header_menu',
-						'depth'           => 2,
-						'container'       => 'div',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'bs-example-navbar-collapse-1',
-						'menu_class'      => 'nav navbar-nav',
-						'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-						'walker'          => new wp_bootstrap_navwalker()
-					)
-				);
-				?>
-
-			</nav>
-		</div>
+            </nav>
+        </div>
 	</div>
-</div>
+</header>
+
