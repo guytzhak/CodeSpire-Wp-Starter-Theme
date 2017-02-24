@@ -1,0 +1,119 @@
+/*
+Theme Name: CodeSpire
+Theme URI: http://CodeSpire.co.il/
+Author: Guy Ytzhak
+Author URI: http://CodeSpire.co.il/
+Description: Wordpress Theme For Bj By CodeSpire!
+Version: 1.0.2
+Text Domain: cs
+*/
+
+/** Main **/
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round&subset=hebrew);
+
+body, html {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    background-color: #fff;
+}
+
+body {
+    padding-bottom: 28px;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.screen-reader-text {
+    position: absolute;
+    top: -1000em;
+}
+
+.screen-reader-text:focus {
+    left: 6px;
+    top: 7px;
+    height: auto;
+    width: auto;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 23px 14px;
+    background: #f1f1f1;
+    color: #0073aa;
+    z-index: 100000;
+    line-height: normal;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+}
+
+@media all and (max-width: 767px){
+    .col-xs-1:nth-child(12n+1){clear:left;}
+    .col-xs-2:nth-child(6n+1){clear:left;}
+    .col-xs-3:nth-child(4n+1){clear:left;}
+    .col-xs-4:nth-child(3n+1){clear:left;}
+    .col-xs-6:nth-child(2n+1){clear:left;}
+}
+
+@media all and (min-width: 768px){
+    .col-sm-1:nth-child(12n+1){clear:left;}
+    .col-sm-2:nth-child(6n+1){clear:left;}
+    .col-sm-3:nth-child(4n+1){clear:left;}
+    .col-sm-4:nth-child(3n+1){clear:left;}
+    .col-sm-6:nth-child(2n+1){clear:left;}
+}
+
+@media all and (min-width: 992px){
+    .col-sm-1:nth-child(12n+1){clear:none;}
+    .col-sm-2:nth-child(6n+1){clear:none;}
+    .col-sm-3:nth-child(4n+1){clear:none;}
+    .col-sm-4:nth-child(3n+1){clear:none;}
+    .col-sm-6:nth-child(2n+1){clear:none;}
+    
+    .col-md-1:nth-child(12n+1){clear:left;}
+    .col-md-2:nth-child(6n+1){clear:left;}
+    .col-md-3:nth-child(4n+1){clear:left;}
+    .col-md-4:nth-child(3n+1){clear:left;}
+    .col-md-6:nth-child(2n+1){clear:left;}
+}
+
+@media all and (min-width: 1200px){
+    
+    .col-md-1:nth-child(12n+1){clear:none;}
+    .col-md-2:nth-child(6n+1){clear:none;}
+    .col-md-3:nth-child(4n+1){clear:none;}
+    .col-md-4:nth-child(3n+1){clear:none;}
+    .col-md-6:nth-child(2n+1){clear:none;}
+    
+    .col-lg-1:nth-child(12n+1){clear:left;}
+    .col-lg-2:nth-child(6n+1){clear:left;}
+    .col-lg-3:nth-child(4n+1){clear:left;}
+    .col-lg-4:nth-child(3n+1){clear:left;}
+    .col-lg-6:nth-child(2n+1){clear:left;}
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
