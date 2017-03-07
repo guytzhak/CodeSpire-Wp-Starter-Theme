@@ -21,7 +21,13 @@ Upload theme file to your Wordpress Themes directory and activate via admin pane
 
 5) Call For Font Awesome css
 
+6) Woocommercer css&sass files woocommerce.scss in theme directory
+
 ## ChangeLog
+
+### 1.0.3 - 07/03/2017
+- Add Woocommerce woocommerce.scss file to theme directory
+- Add Woocommerce cart page and checkout page styles and layout.
 
 ### 1.0.2 - 21/01/2017
 - Add Core Functions file in "inc" folder and named 'core_func.php'
