@@ -59,17 +59,20 @@ function cs_scripts() {
 	wp_enqueue_style( 'slick-css', get_stylesheet_directory_uri() .'/css/slick.css' );
 	wp_enqueue_style( 'slick-theme-css', get_stylesheet_directory_uri() .'/css/slick-theme.css' );
     wp_enqueue_style( 'main-css', get_stylesheet_uri() );
+    wp_enqueue_style( 'woo-css', get_stylesheet_directory_uri() .'/woocommerce.css' );
     
     
     wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.5', true );
     wp_enqueue_script( 'owl-carousel-rtl', get_stylesheet_directory_uri() . '/js/slick.min.js', array('jquery'), '1.6.0', true );
     wp_enqueue_script( 'myscripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'woo_custom', get_stylesheet_directory_uri() . '/js/woo_custom.js', array('jquery'), '1.0.0', true );
 
 }
 
 add_action( 'wp_enqueue_scripts', 'cs_scripts' );
 
 include_once('inc/core_func.php');
+include_once('inc/woo_func.php');
 
 /** Sidebars **/
 
