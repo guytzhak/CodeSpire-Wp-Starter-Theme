@@ -4,8 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-print_r($_POST);
-
 /** Create New Post taxonomy **/
 if(isset($_POST['tax_name']) && !empty($_POST['tax_name'])) {
     $name = sanitize_text_field($_POST['tax_name']);
