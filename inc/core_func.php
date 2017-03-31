@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
 // Core Functions
 
 function cs_embed_html( $html ) {
@@ -26,5 +30,12 @@ function cs_remove_unnecessary_code_setup () {
     add_filter('jpeg_quality', create_function( '', 'return 85;' ) );
 }
 add_action('after_setup_theme', 'cs_remove_unnecessary_code_setup');
+
+// Allow Upload SVG
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 ?>

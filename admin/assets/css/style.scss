@@ -1,0 +1,99 @@
+$white: #fff;
+$black: #000;
+$blue: #0095d9;
+$grey: #f4f4f4;
+$dark_grey: #333;
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700,900&subset=hebrew');
+
+#cs_page {
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 0 0 20px;
+    h1, h2, h3, h4, h5, p, div, span, label {
+        font-family: 'Heebo', sans-serif;
+    }
+    p {
+      font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5 {
+        font-weight: 900;
+    }
+    h1 {
+        color: #000;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 21px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    .msg {
+        background: $white;
+        border: 0;
+        border-bottom: 6px solid $blue;
+        padding: 15px;
+        &.first {
+            .content {
+                padding-left: 100px;
+                background: url(../images/mozi.png) 0 0 no-repeat, url(../images/cs.png) 0 65px no-repeat;
+                background-size: auto 50px;
+            }
+        }
+    }
+    #options {
+        .option {
+            margin: 35px 0 0;
+            background: $white;
+            border-bottom: 6px solid $blue;
+            padding: 15px;
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: decimal;
+                list-style-position: inside;
+                li {
+                    padding: 0;
+                }
+            }
+            form {
+                display: block;
+                .form_elm {
+                    margin: 0 0 20px;
+                    display: block;
+                }
+                label, span {
+                    display: block;
+                    margin: 0 0 3px;
+                }
+                input {
+                    display: block;
+                    /*background: $grey;
+                    border: 1px solid $dark_grey;*/
+                    padding: 0 5px;
+                    line-height: 25px;
+                    height: 27px;
+                    color: $black;
+                    margin: 0 0 7px;
+                    &[type="submit"] {
+                        background: $dark_grey;
+                        color: $white;
+                        border: 0;
+                        padding: 0 35px;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}

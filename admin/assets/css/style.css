@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700,900&subset=hebrew');
+#cs_page {
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 0 0 20px;
+}
+#cs_page h1, #cs_page h2, #cs_page h3, #cs_page h4, #cs_page h5, #cs_page p, #cs_page div, #cs_page span, #cs_page label {
+  font-family: 'Heebo', sans-serif;
+}
+#cs_page p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  padding: 0;
+}
+#cs_page h1, #cs_page h2, #cs_page h3, #cs_page h4, #cs_page h5 {
+  font-weight: 900;
+}
+#cs_page h1 {
+  color: #000;
+}
+#cs_page h2 {
+  font-size: 26px;
+}
+#cs_page h3 {
+  font-size: 21px;
+}
+#cs_page h4 {
+  font-size: 18px;
+}
+#cs_page .msg {
+  background: #fff;
+  border: 0;
+  border-bottom: 6px solid #0095d9;
+  padding: 15px;
+}
+#cs_page .msg.first .content {
+  padding-left: 100px;
+  background: url(../images/mozi.png) 0 0 no-repeat, url(../images/cs.png) 0 65px no-repeat;
+  background-size: auto 50px;
+}
+#cs_page #options .option {
+  margin: 35px 0 0;
+  background: #fff;
+  border-bottom: 6px solid #0095d9;
+  padding: 15px;
+}
+#cs_page #options .option ul {
+  padding: 0;
+  margin: 0;
+  list-style: decimal;
+  list-style-position: inside;
+}
+#cs_page #options .option ul li {
+  padding: 0;
+}
+#cs_page #options .option form {
+  display: block;
+}
+#cs_page #options .option form .form_elm {
+  margin: 0 0 20px;
+  display: block;
+}
+#cs_page #options .option form label, #cs_page #options .option form span {
+  display: block;
+  margin: 0 0 3px;
+}
+#cs_page #options .option form input {
+  display: block;
+  /*background: $grey;
+   border: 1px solid $dark_grey;*/
+  padding: 0 5px;
+  line-height: 25px;
+  height: 27px;
+  color: #000;
+  margin: 0 0 7px;
+}
+#cs_page #options .option form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 0 35px;
+}
