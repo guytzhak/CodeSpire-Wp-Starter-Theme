@@ -17,6 +17,9 @@ Class CodeSpire_FrameWork_Admin {
 
 
     public function cs_admin_scripts() {
+        // Add the color picker css file       
+        wp_enqueue_style( 'wp-color-picker' );
+        
         wp_enqueue_script( 'cs_admin_js', get_stylesheet_directory_uri() .'/admin/assets/js/app.js', array('jquery'), '1.6.0', true );
         wp_enqueue_style( 'cs_admin_css', get_stylesheet_directory_uri() .'/admin/assets/css/style.css' );
     }
@@ -28,6 +31,8 @@ Class CodeSpire_FrameWork_Admin {
     
     public function cs_admin_page(){
         include_once('admin_page.php');
+        // Customized Menu Navigation
+        include_once('menu/codespire-custom-menu.php');
     }
     
 }
