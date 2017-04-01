@@ -1,0 +1,25 @@
+#menu {
+    .navbar-default {
+        border: 0;
+        background: transparent;
+        margin: 0;
+        .navbar-collapse {
+            background: transparent;
+            border: 0;
+            padding: 0;
+            li {
+                a {
+                    font-size: 20px;
+                    line-height: 50px;
+                    font-weight: 900;
+                    padding: 0 20px;
+                    color: $black;
+                }
+                &.active a, &:hover a, a:hover {
+                    color: $red;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
