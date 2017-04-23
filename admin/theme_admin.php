@@ -11,7 +11,7 @@ Class CodeSpire_FrameWork_Admin {
     public $page_dashicon = 'dashicons-editor-code';
     
     public function __construct() {
-        add_action( 'admin_menu', array($this, 'cs_admin_menu') );
+        //add_action( 'admin_menu', array($this, 'cs_admin_menu') );
         add_action( 'admin_enqueue_scripts', array($this, 'cs_admin_scripts') );
     }
 
@@ -25,12 +25,11 @@ Class CodeSpire_FrameWork_Admin {
     }
     
     public function cs_admin_menu() {
-        add_menu_page( $this->page_title, $this->page_name, 'manage_options', 'codespire/codespire-admin-page.php', array($this, 'cs_admin_page'), $this->page_dashicon, 2  );
+        //add_menu_page( $this->page_title, $this->page_name, 'manage_options', 'codespire/codespire-admin-page.php', array($this, 'cs_admin_page'), $this->page_dashicon, 2  );
     }
 
     
     public function cs_admin_page(){
-        include_once('admin_page.php');
         // Customized Menu Navigation
         include_once('menu/codespire-custom-menu.php');
     }

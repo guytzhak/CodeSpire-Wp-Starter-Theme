@@ -1,25 +1,66 @@
 /*
-Theme Name: CodeSpire
+Theme Name: Nook
 Theme URI: http://CodeSpire.co.il/
 Author: Guy Ytzhak
 Author URI: http://CodeSpire.co.il/
-Description: Wordpress Theme For Bj By CodeSpire!
+Description: Wordpress Theme For Nook By CodeSpire!
 Version: 1.0.2
 Text Domain: cs
 */
 
 /** Main **/
 
-@import url(https://fonts.googleapis.com/css?family=Varela+Round&subset=hebrew);
+@font-face{
+	font-family:'almoni-dl';
+	font-weight:300;
+	font-style: normal;
+	src: url('fonts/almoni-dl-aaa-300.eot?1'); 
+	src: url('fonts/almoni-dl-aaa-300.eot?#iefix') format('embedded-opentype'), 
+		url('fonts/almoni-dl-aaa-300.ttf?1') format('truetype'), 
+		url('fonts/almoni-dl-aaa-300.woff?1') format('woff'), 
+		url('fonts/almoni-dl-aaa-300.svg#almoni-dl-300') format('svg');
+}
+
+@font-face{
+	font-family:'almoni-dl';
+	font-weight:400;
+	font-style: normal;
+	src: url('fonts/almoni-dl-aaa-400.eot?1'); 
+	src: url('fonts/almoni-dl-aaa-400.eot?#iefix') format('embedded-opentype'), 
+		url('fonts/almoni-dl-aaa-400.ttf?1') format('truetype'), 
+		url('fonts/almoni-dl-aaa-400.woff?1') format('woff'), 
+		url('fonts/almoni-dl-aaa-400.svg#almoni-dl-400') format('svg');
+}
+
+@font-face{
+	font-family:'almoni-dl';
+	font-weight:700;
+	font-style: normal;
+	src: url('fonts/almoni-dl-aaa-700.eot?1'); 
+	src: url('fonts/almoni-dl-aaa-700.eot?#iefix') format('embedded-opentype'), 
+		url('fonts/almoni-dl-aaa-700.ttf?1') format('truetype'), 
+		url('fonts/almoni-dl-aaa-700.woff?1') format('woff'), 
+		url('fonts/almoni-dl-aaa-700.svg#almoni-dl-700') format('svg');
+}
+
+@font-face{
+	font-family:'almoni-dl';
+	font-weight:900;
+	font-style: normal;
+	src: url('fonts/almoni-dl-aaa-900.eot?1'); 
+	src: url('fonts/almoni-dl-aaa-900.eot?#iefix') format('embedded-opentype'), 
+		url('fonts/almoni-dl-aaa-900.ttf?1') format('truetype'), 
+		url('fonts/almoni-dl-aaa-900.woff?1') format('woff'), 
+		url('fonts/almoni-dl-aaa-900.svg#almoni-dl-900') format('svg');
+}
 
 body, html {
-    font-family: 'Varela Round', sans-serif;
+    font-family:'almoni-dl';
     font-weight: normal;
     color: #000;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    height: 100%;
     background-color: #fff;
 }
 
