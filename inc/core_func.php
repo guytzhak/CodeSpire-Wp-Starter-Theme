@@ -38,4 +38,18 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+
+// exclude theme scandir form optimize speed up
+add_filter( 'theme_scandir_exclusions', 'ws_exclude_dir_scan', 10, 1 );
+function ws_exclude_dir_scan( $exclusions ) {
+  $exclusions[] = 'assets';
+  $exclusions[] = 'inc';
+  $exclusions[] = 'images';
+  $exclusions[] = 'languages';
+  $exclusions[] = 'css';
+  $exclusions[] = 'js';
+
+  return $exclusions;
+}
+
 ?>
