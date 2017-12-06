@@ -85,8 +85,8 @@ Class CodeSpire_FrameWork {
     
     public function helper(){
         // Admin
-        include_once('admin/theme_admin.php');
-        include_once('admin/post_types.php');
+        //include_once('admin/theme_admin.php');
+        //include_once('admin/post_types.php');
         
         // Includes
         require 'inc/wp_bootstrap_navwalker.php';
